@@ -77,7 +77,7 @@ def loading_animation():
     animation = "|/-\\"
     for _ in range(10):
         for char in animation:
-            print(f"Searching {char}", end="\r")
+            print(f"Searching              {char}", end="\r")
             time.sleep(0.1)
 
 def search(query):
@@ -105,7 +105,7 @@ def search(query):
     )
 
     print("\033[K\r", end="")
-    print("\nResult:", chat_completion.choices[0].message.content)
+    print("\n", chat_completion.choices[0].message.content)
 
 def main():
     parser = argparse.ArgumentParser(description='Process query string or prompt for input.')
