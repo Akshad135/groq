@@ -6,12 +6,12 @@ load_dotenv()
 
 def setup():
     if os.path.exists(".env"):
-        print("Setup has already been completed. Skipping...")
+        print("Skipping...")
         return
     
-    api_key = input("Enter your Groq API key: ")
-    role = input("Enter your role (e.g., 'user'): ")
-    model = input("Enter the model (e.g., 'mixtral-8x7b-32768'): ")
+    api_key = input("Enter your API key: ")
+    role = input("Enter your role: ")
+    model = input("Enter the model: ")
 
 
     with open(".env", "w") as f:
