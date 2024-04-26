@@ -1,0 +1,5 @@
+- Create **init**.py
+- Create .env with the variables :
+  - GROQ_API_KEY=KEY
+  - GROQ_ROLE=user (could be changed to system also)
+  - GROQ_MODEL=mixtral-8x7b-32768 (can you Llama8b or 70b)
