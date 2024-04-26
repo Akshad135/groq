@@ -1,2 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+bin/
+var/
+sdist/
+wheelhouse/
+
+# Test files
+*.pyc
+*.pytest.cache
+.tox/
+.coverage
+.cache
+
+# IDE / editor files
+.idea/
+.vscode/
+*.suo
+*.sublime-project
+*.sublime-workspace
+
+# Generated documentation
+docs/_build/
+
+# Environment variables
 .env
-__init__.py
+.venv
+env/
+
+# Logs
+logs/
+
+# Other
+.gitignore
