@@ -36,6 +36,7 @@ docs/_build/
 .env
 .venv
 env/
+*.json
 
 # Logs
 logs/
