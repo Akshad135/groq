@@ -7,6 +7,7 @@ setup(
     install_requires=[
         'groq'
     ],
+    setup_requires=['wheel'],
     entry_points={
         'console_scripts': [
             'grc=groq_cli_chat.work:main'
