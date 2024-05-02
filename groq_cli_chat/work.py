@@ -171,13 +171,14 @@ def search(query):
         print("Configuration file not found. Please run setup first.")
 
 
+
 def main():
     parser = argparse.ArgumentParser(description='prompt for input')
     parser.add_argument('--role', action='store_true', help='Change the role')
     parser.add_argument('--api', action='store_true', help='Change the API key')
     parser.add_argument('--model', action='store_true', help='Change the model')
 
-    args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
 
     if args.role:
         edit_role()
@@ -191,10 +192,14 @@ def main():
         edit_model()
         return
 
-    if not check_setup():
+    if not check_setup() and not unknown:
         setup()
-
-    query = input("Enter your query: ")
+        return
+        
+    if not unknown:
+        query = input("Enter your query: ")  
+    else:
+        query = ' '.join(unknown)
     search(query)
 
 if __name__ == "__main__":

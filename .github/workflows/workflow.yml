@@ -28,8 +28,8 @@ jobs:
         run: python setup.py sdist bdist_wheel
 
       - name: Publish to PyPI
-        # uses: pypa/gh-action-pypi-publish@release/v1
-        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
+          # password: ${{ secrets.PYPI_API_TOKEN }}
+          password: pypi-AgEIcHlwaS5vcmcCJDQzYzRmZWQ1LTc3MTUtNDE2NS1iMDEyLTA4NzE0OWUzNTMxZgACKlszLCIzYjY5M2Y3ZC1lZjcxLTRiNzctYmY4Yy04MmNjNTBkZjZmODIiXQAABiBBfETi745dLSCOWCEMYKXY_6FL3Utgrcub7F_8EpXHpA
